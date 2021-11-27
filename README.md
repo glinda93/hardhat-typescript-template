@@ -1,3 +1,5 @@
+![CI status](https://github.com/glinda93/hardhat-typescript-template/actions/workflows/main.yml/badge.svg)
+
 # About
 
 Hardhat template created with Hardhat advanced sample typescript template.
