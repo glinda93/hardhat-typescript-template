@@ -25,11 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       # installing Node
-      - name: Use Node.js 12.x
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          # this will use the latest Node 12 version
-          node-version: 12.x
+          # this will use the latest Node 16 version
+          node-version: 16.x
       # install dependencies using clean install to avoid package lock updates
       - run: npm ci
       - run: npm run lint
