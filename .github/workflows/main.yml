@@ -38,3 +38,23 @@ jobs:
       - run: npm test
       - run: npm run node &
       - run: npm run deploy
+      
+      - name: Upload coverage
+        uses: codecov/codecov-action@v2
+        with:
+          directory: ./coverage
+          name: codecov-umbrella
+          fail_ci_if_error: true
+          flags: unittests
+
+      - name: Run Slither
+        uses: crytic/slither-action@v0.1.1
+        continue-on-error: true
+        id: slither
+        with:
+          sarif: results.sarif
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ${{ steps.slither.outputs.sarif }}
