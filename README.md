@@ -8,6 +8,7 @@ Hardhat template created with Hardhat advanced sample typescript template.
 ## What's included
 
 - Github Action (lint, build, test, local deploy, coverage, slither and sarif)
+- ABI artifacts
 - Github Action status badge
 - Codecov badge
 - Slither SARIF
