@@ -1,8 +1,19 @@
 ![CI status](https://github.com/glinda93/hardhat-typescript-template/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/glinda93/hardhat-typescript-template/branch/master/graph/badge.svg?token=7Q0ZQ5EQ4U)](https://codecov.io/gh/glinda93/hardhat-typescript-template)
 
 # About
 
 Hardhat template created with Hardhat advanced sample typescript template.
+
+## What's included
+
+- Github Action (lint, build, test, local deploy, coverage, slither and sarif)
+- Github Action status badge
+- Codecov badge
+- Slither SARIF
+- `lint` and `lint:fix` commands
+
+and
 
 # Advanced Sample Hardhat Project
 
