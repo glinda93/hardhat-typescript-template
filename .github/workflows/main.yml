@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,11 +34,18 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
+
+      - name: Archive contract ABI
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifacts_abi
+          path: |
+            artifacts
+
       # run the tests
       - run: npm test
       - run: npm run node &
       - run: npm run deploy
-      
       - name: Upload coverage
         uses: codecov/codecov-action@v2
         with:
