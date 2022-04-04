@@ -5,14 +5,18 @@
 
 Hardhat template created with Hardhat advanced sample typescript template.
 
+Feel free to use it for your next solidity project.
+
+With badges, artifacts, security and github workflows, your project will look more professional :sunglasses:
+
 ## What's included
 
-- Github Action (lint, build, test, local deploy, coverage, slither and sarif)
-- ABI artifacts
-- Github Action status badge
-- Codecov badge
-- Slither SARIF
-- `lint` and `lint:fix` commands
+- :gear: Github Action (lint, build, test, local deploy, coverage, slither and sarif)
+- :package: ABI artifacts
+- :rocket: Github Action status badge
+- :four_leaf_clover: Codecov badge
+- :snake:  Slither SARIF and Github security
+- :writing_hand: lint and lint:fix commands
 
 and
 
