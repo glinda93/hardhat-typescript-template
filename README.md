@@ -15,7 +15,7 @@ With badges, artifacts, security and github workflows, your project will look mo
 - :package: ABI artifacts
 - :rocket: Github Action status badge
 - :four_leaf_clover: Codecov badge
-- :snake:  Slither SARIF and Github security
+- :snake: Slither SARIF and Github security
 - :writing_hand: lint and lint:fix commands
 
 and
